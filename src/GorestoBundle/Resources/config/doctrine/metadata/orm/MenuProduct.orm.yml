@@ -1,0 +1,17 @@
+MenuProduct:
+    type: entity
+    table: menu_product
+    id:
+        menuId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: menu_id
+        productId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: product_id
+    lifecycleCallbacks: {  }

@@ -1,0 +1,39 @@
+Supplement:
+    type: entity
+    table: supplement
+    id:
+        id:
+            type: bigint
+            nullable: false
+            unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        restaurantId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            column: restaurant_id
+        currencyId:
+            type: bigint
+            nullable: true
+            unsigned: false
+            column: currency_id
+        name:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        price:
+            type: decimal
+            nullable: true
+            precision: 6
+            scale: 2
+            default: '0.00'
+        image:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+    lifecycleCallbacks: {  }

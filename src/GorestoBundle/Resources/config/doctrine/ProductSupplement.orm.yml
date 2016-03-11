@@ -1,0 +1,17 @@
+GorestoBundle\Entity\ProductSupplement:
+    type: entity
+    table: product_supplement
+    id:
+        productId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: product_id
+        supplementId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: supplement_id
+    lifecycleCallbacks: {  }

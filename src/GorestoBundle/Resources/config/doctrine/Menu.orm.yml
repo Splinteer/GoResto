@@ -1,0 +1,38 @@
+GorestoBundle\Entity\Menu:
+    type: entity
+    table: menu
+    id:
+        id:
+            type: bigint
+            nullable: false
+            unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        restaurantId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            column: restaurant_id
+        currencyId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            column: currency_id
+        name:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        price:
+            type: decimal
+            nullable: false
+            precision: 6
+            scale: 2
+        image:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+    lifecycleCallbacks: {  }

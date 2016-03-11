@@ -1,0 +1,38 @@
+GorestoBundle\Entity\UserOrderProductSupplement:
+    type: entity
+    table: user_order_product_supplement
+    id:
+        userOrderId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: user_order_id
+        productId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: product_id
+        supplementId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: supplement_id
+    fields:
+        currencyId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            column: currency_id
+        price:
+            type: decimal
+            nullable: false
+            precision: 6
+            scale: 2
+        quantity:
+            type: integer
+            nullable: false
+            unsigned: false
+    lifecycleCallbacks: {  }

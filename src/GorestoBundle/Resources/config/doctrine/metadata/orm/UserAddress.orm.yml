@@ -1,0 +1,53 @@
+UserAddress:
+    type: entity
+    table: user_address
+    id:
+        id:
+            type: bigint
+            nullable: false
+            unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        userId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            column: user_id
+        line1:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        line2:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        locality:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        region:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        zipcode:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        country:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        telephone:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+    lifecycleCallbacks: {  }

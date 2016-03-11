@@ -1,0 +1,17 @@
+GorestoBundle\Entity\ProductPromotion:
+    type: entity
+    table: product_promotion
+    id:
+        productId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: product_id
+        promotionId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: promotion_id
+    lifecycleCallbacks: {  }

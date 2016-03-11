@@ -1,0 +1,28 @@
+GorestoBundle\Entity\Currency:
+    type: entity
+    table: currency
+    id:
+        id:
+            type: bigint
+            nullable: false
+            unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        name:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        code:
+            type: string
+            nullable: false
+            length: 5
+            fixed: true
+        symbol:
+            type: string
+            nullable: false
+            length: 3
+            fixed: true
+    lifecycleCallbacks: {  }

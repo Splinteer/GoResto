@@ -1,0 +1,17 @@
+MenuPromotion:
+    type: entity
+    table: menu_promotion
+    id:
+        menuId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: menu_id
+        promotionId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            column: promotion_id
+    lifecycleCallbacks: {  }

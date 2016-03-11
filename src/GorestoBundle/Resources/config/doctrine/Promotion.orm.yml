@@ -1,0 +1,27 @@
+GorestoBundle\Entity\Promotion:
+    type: entity
+    table: promotion
+    id:
+        id:
+            type: bigint
+            nullable: false
+            unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        currencyId:
+            type: bigint
+            nullable: true
+            unsigned: false
+            column: currency_id
+        price:
+            type: decimal
+            nullable: true
+            precision: 6
+            scale: 2
+        percent:
+            type: integer
+            nullable: true
+            unsigned: true
+    lifecycleCallbacks: {  }

@@ -1,0 +1,63 @@
+RestaurantAddress:
+    type: entity
+    table: restaurant_address
+    id:
+        id:
+            type: bigint
+            nullable: false
+            unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        restaurantId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            column: restaurant_id
+        line1:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        line2:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        locality:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        region:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        zipcode:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        country:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        telephone:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        lat:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 6
+        lng:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 6
+    lifecycleCallbacks: {  }

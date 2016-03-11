@@ -1,0 +1,3 @@
+goresto_homepage:
+    path:     /
+    defaults: { _controller: GorestoBundle:Default:index }
